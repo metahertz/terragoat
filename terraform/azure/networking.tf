@@ -95,11 +95,11 @@ resource azurerm_network_security_group "bad_sg" {
     destination_address_prefix = "*"
   }
   tags = {
-    git_commit           = "898d5beaec7ffdef6df0d7abecff407362e2a74e"
+    git_commit           = "5e3a493d8eac0b48db3fb570b6fb573aacf9a600"
     git_file             = "terraform/azure/networking.tf"
-    git_last_modified_at = "2020-06-17 12:59:55"
-    git_last_modified_by = "nimrodkor@gmail.com"
-    git_modifiers        = "nimrodkor"
+    git_last_modified_at = "2021-06-02 15:23:26"
+    git_last_modified_by = "41898282+github-actions[bot]@users.noreply.github.com"
+    git_modifiers        = "41898282+github-actions[bot]/nimrodkor"
     git_org              = "metahertz"
     git_repo             = "terragoat"
     yor_trace            = "828402d1-8431-4432-b8ec-fe5abc353a8d"

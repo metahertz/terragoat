@@ -10,11 +10,11 @@ resource "aws_s3_bucket" "data" {
   tags = {
     Name                 = "${local.resource_prefix.value}-data"
     Environment          = local.resource_prefix.value
-    git_commit           = "d68d2897add9bc2203a5ed0632a5cdd8ff8cefb0"
+    git_commit           = "d8144fd6916fb2b350fbdfcafeba17ecdd1e328d"
     git_file             = "terraform/aws/s3.tf"
-    git_last_modified_at = "2020-06-16 14:46:24"
-    git_last_modified_by = "nimrodkor@gmail.com"
-    git_modifiers        = "nimrodkor"
+    git_last_modified_at = "2021-06-02 15:29:02"
+    git_last_modified_by = "matt@bridgecrew.io"
+    git_modifiers        = "41898282+github-actions[bot]/matt/nimrodkor"
     git_org              = "metahertz"
     git_repo             = "terragoat"
     yor_trace            = "57258f9a-8945-4070-b00a-15e4d1e232cb"
