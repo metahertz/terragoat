@@ -27,8 +27,16 @@ resource azurerm_linux_virtual_machine "linux_machine" {
   }
 
   tags = {
-    terragoat   = true
-    environment = var.environment
+    terragoat            = true
+    environment          = var.environment
+    git_commit           = "de3bb777f967989c2c3332faea16cb614c55ccc9"
+    git_file             = "terraform/azure/instance.tf"
+    git_last_modified_at = "2020-06-17 15:48:15"
+    git_last_modified_by = "nimrodkor@gmail.com"
+    git_modifiers        = "nimrodkor"
+    git_org              = "metahertz"
+    git_repo             = "terragoat"
+    yor_trace            = "b3006874-f3c9-486e-8759-df5bc1e3a931"
   }
 }
 
@@ -53,7 +61,15 @@ resource azurerm_windows_virtual_machine "windows_machine" {
   }
 
   tags = {
-    terragoat   = true
-    environment = var.environment
+    terragoat            = true
+    environment          = var.environment
+    git_commit           = "de3bb777f967989c2c3332faea16cb614c55ccc9"
+    git_file             = "terraform/azure/instance.tf"
+    git_last_modified_at = "2020-06-17 15:48:15"
+    git_last_modified_by = "nimrodkor@gmail.com"
+    git_modifiers        = "nimrodkor"
+    git_org              = "metahertz"
+    git_repo             = "terragoat"
+    yor_trace            = "b30d83b8-d5ce-4022-b0f4-10fff5cf6bbc"
   }
 }
