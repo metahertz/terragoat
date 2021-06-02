@@ -46,11 +46,11 @@ resource "aws_lambda_function" "analysis_lambda" {
     }
   }
   tags = {
-    git_commit           = "d68d2897add9bc2203a5ed0632a5cdd8ff8cefb0"
+    git_commit           = "bed70015befd911f39676bfad6706f1f2ddf33f5"
     git_file             = "terraform/aws/lambda.tf"
-    git_last_modified_at = "2020-06-16 14:46:24"
-    git_last_modified_by = "nimrodkor@gmail.com"
-    git_modifiers        = "nimrodkor"
+    git_last_modified_at = "2021-06-02 17:03:12"
+    git_last_modified_by = "41898282+github-actions[bot]@users.noreply.github.com"
+    git_modifiers        = "41898282+github-actions[bot]/nimrodkor"
     git_org              = "metahertz"
     git_repo             = "terragoat"
     yor_trace            = "eb8cd4cf-af3c-440c-ab24-49204224d622"

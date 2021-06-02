@@ -48,11 +48,11 @@ resource "azurerm_storage_account" "example" {
     }
   }
   tags = {
-    git_commit           = "81738b80d571fa3034633690d13ffb460e1e7dea"
+    git_commit           = "bed70015befd911f39676bfad6706f1f2ddf33f5"
     git_file             = "terraform/azure/storage.tf"
-    git_last_modified_at = "2020-06-19 21:14:50"
-    git_last_modified_by = "Adin.Ermie@outlook.com"
-    git_modifiers        = "Adin.Ermie/nimrodkor"
+    git_last_modified_at = "2021-06-02 17:03:12"
+    git_last_modified_by = "41898282+github-actions[bot]@users.noreply.github.com"
+    git_modifiers        = "41898282+github-actions[bot]/Adin.Ermie/nimrodkor"
     git_org              = "metahertz"
     git_repo             = "terragoat"
     yor_trace            = "f569eeeb-dd6e-455d-afbf-d2b7908dfd7a"
