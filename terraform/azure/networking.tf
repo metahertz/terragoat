@@ -3,6 +3,16 @@ resource "azurerm_virtual_network" "example" {
   address_space       = ["10.0.0.0/16"]
   location            = azurerm_resource_group.example.location
   resource_group_name = azurerm_resource_group.example.name
+  tags = {
+    git_commit           = "898d5beaec7ffdef6df0d7abecff407362e2a74e"
+    git_file             = "terraform/azure/networking.tf"
+    git_last_modified_at = "2020-06-17 12:59:55"
+    git_last_modified_by = "nimrodkor@gmail.com"
+    git_modifiers        = "nimrodkor"
+    git_org              = "metahertz"
+    git_repo             = "terragoat"
+    yor_trace            = "a65e31d1-7ec7-4a0f-9834-4754f2c157f6"
+  }
 }
 
 resource "azurerm_subnet" "example" {
@@ -22,6 +32,16 @@ resource "azurerm_network_interface" "ni_linux" {
     subnet_id                     = azurerm_subnet.example.id
     private_ip_address_allocation = "Dynamic"
   }
+  tags = {
+    git_commit           = "de3bb777f967989c2c3332faea16cb614c55ccc9"
+    git_file             = "terraform/azure/networking.tf"
+    git_last_modified_at = "2020-06-17 15:48:15"
+    git_last_modified_by = "nimrodkor@gmail.com"
+    git_modifiers        = "nimrodkor"
+    git_org              = "metahertz"
+    git_repo             = "terragoat"
+    yor_trace            = "2487aa72-cd26-4587-adb4-98da5ca4b05b"
+  }
 }
 
 resource "azurerm_network_interface" "ni_win" {
@@ -34,6 +54,16 @@ resource "azurerm_network_interface" "ni_win" {
     subnet_id                     = azurerm_subnet.example.id
     private_ip_address_allocation = "Dynamic"
   }
+  tags = {
+    git_commit           = "de3bb777f967989c2c3332faea16cb614c55ccc9"
+    git_file             = "terraform/azure/networking.tf"
+    git_last_modified_at = "2020-06-17 15:48:15"
+    git_last_modified_by = "nimrodkor@gmail.com"
+    git_modifiers        = "nimrodkor"
+    git_org              = "metahertz"
+    git_repo             = "terragoat"
+    yor_trace            = "d9992c8c-ead5-4382-a607-aa1460b32f41"
+  }
 }
 
 resource azurerm_network_security_group "bad_sg" {
@@ -42,27 +72,37 @@ resource azurerm_network_security_group "bad_sg" {
   resource_group_name = azurerm_resource_group.example.name
 
   security_rule {
-    access                 = "Allow"
-    direction              = "Inbound"
-    name                   = "AllowSSH"
-    priority               = 200
-    protocol               = "TCP"
-    source_address_prefix  = "*"
-    source_port_range      = "*"
-    destination_port_range = "22-22"
+    access                     = "Allow"
+    direction                  = "Inbound"
+    name                       = "AllowSSH"
+    priority                   = 200
+    protocol                   = "TCP"
+    source_address_prefix      = "*"
+    source_port_range          = "*"
+    destination_port_range     = "22-22"
     destination_address_prefix = "*"
   }
 
   security_rule {
-    access                 = "Allow"
-    direction              = "Inbound"
-    name                   = "AllowRDP"
-    priority               = 300
-    protocol               = "TCP"
-    source_address_prefix  = "*"
-    source_port_range      = "*"
-    destination_port_range = "3389-3389"
+    access                     = "Allow"
+    direction                  = "Inbound"
+    name                       = "AllowRDP"
+    priority                   = 300
+    protocol                   = "TCP"
+    source_address_prefix      = "*"
+    source_port_range          = "*"
+    destination_port_range     = "3389-3389"
     destination_address_prefix = "*"
+  }
+  tags = {
+    git_commit           = "898d5beaec7ffdef6df0d7abecff407362e2a74e"
+    git_file             = "terraform/azure/networking.tf"
+    git_last_modified_at = "2020-06-17 12:59:55"
+    git_last_modified_by = "nimrodkor@gmail.com"
+    git_modifiers        = "nimrodkor"
+    git_org              = "metahertz"
+    git_repo             = "terragoat"
+    yor_trace            = "828402d1-8431-4432-b8ec-fe5abc353a8d"
   }
 }
 
@@ -70,6 +110,16 @@ resource azurerm_network_watcher "network_watcher" {
   location            = var.location
   name                = "terragoat-network-watcher-${var.environment}"
   resource_group_name = azurerm_resource_group.example.name
+  tags = {
+    git_commit           = "898d5beaec7ffdef6df0d7abecff407362e2a74e"
+    git_file             = "terraform/azure/networking.tf"
+    git_last_modified_at = "2020-06-17 12:59:55"
+    git_last_modified_by = "nimrodkor@gmail.com"
+    git_modifiers        = "nimrodkor"
+    git_org              = "metahertz"
+    git_repo             = "terragoat"
+    yor_trace            = "c0fb6774-0752-4b54-9a31-6fe58ccd9eee"
+  }
 }
 
 resource azurerm_network_watcher_flow_log "flow_log" {
