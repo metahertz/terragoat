@@ -19,11 +19,11 @@ echo "<h1>Deployed via Terraform</h1>" | sudo tee /var/www/html/index.html
 EOF
   tags = {
     Name                 = "${local.resource_prefix.value}-ec2"
-    git_commit           = "d68d2897add9bc2203a5ed0632a5cdd8ff8cefb0"
+    git_commit           = "30b41098b21fd13a9e1dffcb00612adf0ae823ff"
     git_file             = "terraform/aws/ec2.tf"
-    git_last_modified_at = "2020-06-16 14:46:24"
-    git_last_modified_by = "nimrodkor@gmail.com"
-    git_modifiers        = "nimrodkor"
+    git_last_modified_at = "2021-06-10 13:49:05"
+    git_last_modified_by = "matt@bridgecrew.io"
+    git_modifiers        = "matt/nimrodkor"
     git_org              = "metahertz"
     git_repo             = "terragoat"
     yor_trace            = "b85d5290-b3c2-4134-b60f-f7b6768418f0"
@@ -33,15 +33,15 @@ EOF
 resource "aws_ebs_volume" "web_host_storage" {
   # unencrypted volume
   availability_zone = "${var.availability_zone}"
-  encrypted         = true  # Setting this causes the volume to be recreated on apply 
-  size = 1
+  encrypted         = true # Setting this causes the volume to be recreated on apply 
+  size              = 1
   tags = {
     Name                 = "${local.resource_prefix.value}-ebs"
-    git_commit           = "d68d2897add9bc2203a5ed0632a5cdd8ff8cefb0"
+    git_commit           = "30b41098b21fd13a9e1dffcb00612adf0ae823ff"
     git_file             = "terraform/aws/ec2.tf"
-    git_last_modified_at = "2020-06-16 14:46:24"
-    git_last_modified_by = "nimrodkor@gmail.com"
-    git_modifiers        = "nimrodkor"
+    git_last_modified_at = "2021-06-10 13:49:05"
+    git_last_modified_by = "matt@bridgecrew.io"
+    git_modifiers        = "matt/nimrodkor"
     git_org              = "metahertz"
     git_repo             = "terragoat"
     yor_trace            = "7771c97c-1831-483c-a56d-ba7dd0b003fe"

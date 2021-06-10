@@ -63,19 +63,22 @@ resource aws_subnet "eks_subnet1" {
   availability_zone       = var.availability_zone
   map_public_ip_on_launch = true
   tags = {
-    Name                                              = "${local.resource_prefix.value}-eks-subnet"
-    "kubernetes.io/cluster/${local.eks_name.value}"   = "shared"
-    git_commit                                        = "d68d2897add9bc2203a5ed0632a5cdd8ff8cefb0"
-    git_file                                          = "terraform/aws/eks.tf"
-    git_last_modified_at                              = "2020-06-16 14:46:24"
-    git_last_modified_by                              = "nimrodkor@gmail.com"
-    git_modifiers                                     = "nimrodkor"
-    git_org                                           = "metahertz"
-    git_repo                                          = "terragoat"
-    "kubernetes.io/cluster/$${local.eks_name.value}"  = "shared"
-    yor_trace                                         = "ed11412d-63eb-4368-a571-7f613cb87118"
-    "kubernetes.io/cluster/$$${local.eks_name.value}" = "shared"
-    "kubernetes.io/cluster/$${local.eks_name.value}"  = "shared"
+    Name                                               = "${local.resource_prefix.value}-eks-subnet"
+    "kubernetes.io/cluster/${local.eks_name.value}"    = "shared"
+    git_commit                                         = "d68d2897add9bc2203a5ed0632a5cdd8ff8cefb0"
+    git_file                                           = "terraform/aws/eks.tf"
+    git_last_modified_at                               = "2020-06-16 14:46:24"
+    git_last_modified_by                               = "nimrodkor@gmail.com"
+    git_modifiers                                      = "nimrodkor"
+    git_org                                            = "metahertz"
+    git_repo                                           = "terragoat"
+    "kubernetes.io/cluster/$${local.eks_name.value}"   = "shared"
+    yor_trace                                          = "ed11412d-63eb-4368-a571-7f613cb87118"
+    "kubernetes.io/cluster/$$${local.eks_name.value}"  = "shared"
+    "kubernetes.io/cluster/$${local.eks_name.value}"   = "shared"
+    "kubernetes.io/cluster/$$$${local.eks_name.value}" = "shared"
+    "kubernetes.io/cluster/$$${local.eks_name.value}"  = "shared"
+    "kubernetes.io/cluster/$${local.eks_name.value}"   = "shared"
   }
 }
 
@@ -85,19 +88,22 @@ resource aws_subnet "eks_subnet2" {
   availability_zone       = var.availability_zone2
   map_public_ip_on_launch = true
   tags = {
-    Name                                              = "${local.resource_prefix.value}-eks-subnet2"
-    "kubernetes.io/cluster/${local.eks_name.value}"   = "shared"
-    git_commit                                        = "d68d2897add9bc2203a5ed0632a5cdd8ff8cefb0"
-    git_file                                          = "terraform/aws/eks.tf"
-    git_last_modified_at                              = "2020-06-16 14:46:24"
-    git_last_modified_by                              = "nimrodkor@gmail.com"
-    git_modifiers                                     = "nimrodkor"
-    git_org                                           = "metahertz"
-    git_repo                                          = "terragoat"
-    "kubernetes.io/cluster/$${local.eks_name.value}"  = "shared"
-    yor_trace                                         = "b54c1330-4d90-44ca-9bc4-4c8e889916b0"
-    "kubernetes.io/cluster/$$${local.eks_name.value}" = "shared"
-    "kubernetes.io/cluster/$${local.eks_name.value}"  = "shared"
+    Name                                               = "${local.resource_prefix.value}-eks-subnet2"
+    "kubernetes.io/cluster/${local.eks_name.value}"    = "shared"
+    git_commit                                         = "d68d2897add9bc2203a5ed0632a5cdd8ff8cefb0"
+    git_file                                           = "terraform/aws/eks.tf"
+    git_last_modified_at                               = "2020-06-16 14:46:24"
+    git_last_modified_by                               = "nimrodkor@gmail.com"
+    git_modifiers                                      = "nimrodkor"
+    git_org                                            = "metahertz"
+    git_repo                                           = "terragoat"
+    "kubernetes.io/cluster/$${local.eks_name.value}"   = "shared"
+    yor_trace                                          = "b54c1330-4d90-44ca-9bc4-4c8e889916b0"
+    "kubernetes.io/cluster/$$${local.eks_name.value}"  = "shared"
+    "kubernetes.io/cluster/$${local.eks_name.value}"   = "shared"
+    "kubernetes.io/cluster/$$$${local.eks_name.value}" = "shared"
+    "kubernetes.io/cluster/$$${local.eks_name.value}"  = "shared"
+    "kubernetes.io/cluster/$${local.eks_name.value}"   = "shared"
   }
 }
 
